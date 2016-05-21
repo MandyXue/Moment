@@ -3,7 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
+  padding-bottom: 0;
   color: #5a5a5a;
     font-family: "Helvetica Neue", Helvetica,"方正兰亭黑_GBK", Arial, "微软雅黑", sans-serif;
 }
@@ -21,7 +21,7 @@ body {
   z-index: 20;
 }
 .navbar{
-  margin-bottom: 0px;
+  margin-bottom: 0;
   background-color: #FFD508;
 }
 
@@ -51,7 +51,7 @@ body {
 .carousel {
   height: 500px;
   margin-bottom: 30px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -76,8 +76,20 @@ body {
 .search-bar{
     margin:auto;
     width:50%;
+  padding-bottom: 30px;
 }
-
+/* CUSTOMIZE THE FOOTER
+-------------------------------------------------- */
+.footer{
+    border-top: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+}
+.footer .container{
+    padding-top:30px;
+}
+.footer h1{
+    margin-top:0;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
