@@ -6,4 +6,5 @@ package dao;
  * 即Data Access Object(数据访问对象层) interface
  */
 public interface UserDao {
+
 }
