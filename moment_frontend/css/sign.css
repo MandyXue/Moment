@@ -1,0 +1,28 @@
+.jumbotron {
+    background: url("../images/bg.jpg") left no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-bottom:0;
+    padding:0;
+}
+.jumbotron .container{
+    margin:0;
+    height:inherit;
+    background-color: rgba(255,245,184,0.6);
+}
+
+.input-container{
+    background:none;
+    width: 80%;
+    margin:auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.btn-sign{
+    background-color: #ffc715;
+    color:#fff;
+    border:0;
+    margin-top:40px;
+    height:80%;
+}
