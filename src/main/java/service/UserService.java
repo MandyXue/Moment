@@ -13,7 +13,7 @@ import java.net.URL;
 @Service
 public class UserService {
 
-    public void usersTest() throws Exception{
+    public String usersTest(String username,String password) throws Exception{
         String encoding="UTF-8";
         String params="{\"username\":\"ypfyhs\",\"password\":\"12345678\",\"mobilePhoneNumber\":\"13764885998\",\"email\":\"562394562@qq.com\",\"userType\":\"Administrator\"}";
         String path ="https://api.leancloud.cn/1.1/users";
@@ -51,7 +51,9 @@ public class UserService {
             InputStream inStream = conn.getInputStream();
             String result=streamToString(inStream);
             System.out.println(result);
+            return "success";
         }
+        return "fail";
     }
 
     static public String streamToString(InputStream in) throws IOException {

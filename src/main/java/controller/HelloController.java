@@ -12,8 +12,16 @@ public class HelloController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
 		model.addAttribute("message", "Hello world!");
-		return "hello";
+		return "index";
 	}
+
+	@RequestMapping("index")
+	public String backToIndex(ModelMap model) {
+		model.addAttribute("message", "Hello world!");
+		return "index";
+	}
+
+
 
 	public static void main(String args[])
 	{
