@@ -1,0 +1,14 @@
+
+.navbar img{
+    max-height: 40px;
+    margin:5px;
+    float:right;
+}
+.navbar-right{
+    margin-right: 0;
+}
+.navbar-right>li>a{
+    font-size: small;
+    margin-top: 15px;
+    padding: 5px;
+}
