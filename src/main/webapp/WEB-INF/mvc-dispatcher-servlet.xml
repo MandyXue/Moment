@@ -12,4 +12,7 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <bean id="userService" class="service.UserService" scope="prototype"></bean>
+
+
 </beans>
