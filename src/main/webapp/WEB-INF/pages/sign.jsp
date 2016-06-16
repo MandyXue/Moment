@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 <head>
     <title>sign</title>
@@ -15,11 +16,13 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>Sign in</title>
 
+    <c:set var="bp" value="${pageContext.request.contextPath}"/>
+
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="css/sign.css" rel="stylesheet">
-    <link href="css/input.css" rel="stylesheet">
+    <link href="/moment/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/moment/css/index.css" rel="stylesheet">
+    <link href="/moment/css/sign.css" rel="stylesheet">
+    <link href="/moment/css/input.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -119,7 +122,7 @@
     </div>
 </div>
 
-<script src="js/classie.js"></script>
+<script src="/moment/js/classie.js"></script>
 <script>
     (function() {
         // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
@@ -158,7 +161,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script src="/moment/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>

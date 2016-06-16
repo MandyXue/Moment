@@ -10,12 +10,12 @@
 <form xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Search</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!--fonts-->
     <link href='http://fonts.useso.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
     <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!--//fonts-->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,9 +24,7 @@
     <!-- //for-mobile-apps -->
     <!-- js -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/scripts/jquery.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <!-- js -->
 
 </head>
