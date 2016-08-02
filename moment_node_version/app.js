@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var config = require('./config');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -13,11 +14,9 @@ var app = express();
 // set leancloud
 
 var AV = require('avoscloud-sdk').AV;
-var APP_ID = 'YOUR_ID';
-var APP_KEY = 'YOUR_KEY';
 AV.initialize({
-  appId: APP_ID,
-  appKey: APP_KEY
+  appId: config.LeanCloud.AppID,
+  appKey: config.LeanCloud.appKey
 });
 
 // view engine setup
