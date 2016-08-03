@@ -97,3 +97,6 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# config file
+/moment_node_version/config.js
