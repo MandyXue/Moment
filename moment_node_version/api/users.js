@@ -13,23 +13,20 @@ function User(obj) {
     }
 }
 
-User.login = function (mobilePhone, password) {
-    AV.User.logInWithMobilePhone(mobilePhone, password).then(function (loginedUser) {
-        console.log(loginedUser);
-    }, (function (error) {
-        console.log(error);
-    }));
+User.logIn = function (username, password) {
+    return AV.User.logIn(username, password);
 };
 
-User.signUp = function (username, password) {
+User.signUp = function (username, password, email, userType) {
     var user = new AV.User();
     user.setUsername(username);
     user.setPassword(password);
-    //user.setMobilePhoneNumber(mobilePhone);
+    user.setEmail(email);
+    user.set('userType', userType);
 
-    user.signUp().then(function (loginedUser) {
-        console.log(loginedUser);
-    }, (function (error) {
-        console.log(error);
-    }));
+    return user.signUp();
+};
+
+User.logOut = function () {
+    return AV.User.logOut();
 };

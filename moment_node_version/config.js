@@ -6,7 +6,8 @@ var config = {
     port: '3000',
     LeanCloud: {
         AppID: '',
-        AppKey: ''
+        AppKey: '',
+        MasterKey: ''
     }
 };
 

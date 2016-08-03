@@ -14,10 +14,16 @@ var app = express();
 // set leancloud
 
 var AV = require('avoscloud-sdk').AV;
-AV.initialize({
-  appId: config.LeanCloud.AppID,
-  appKey: config.LeanCloud.appKey
-});
+AV.initialize(config.LeanCloud.AppID, config.LeanCloud.AppKey, config.LeanCloud.MasterKey);
+
+//leancloud test
+//var TestObject = AV.Object.extend('TestObject');
+//var testObject = new TestObject();
+//testObject.save({
+//  words: 'Hello World!'
+//}).then(function(object) {
+//  console.log('LeanCloud Rocks!');
+//});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
