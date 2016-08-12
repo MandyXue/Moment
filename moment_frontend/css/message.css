@@ -1,0 +1,26 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, "方正兰亭黑_GBK", Arial, "微软雅黑", sans-serif;
+}
+
+.content-container{
+    min-height: 500px;
+    width:80%;
+    margin:auto;
+}
+
+.content-container>h1
+{
+    text-align:center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+}
+
+.msg-box a h4 {
+    font-weight: bolder;
+}
+
+.panel-default>.panel-heading {
+    background-color:rgba(255, 213, 8, 0.5);
+    /*color: #333;*/
+    border-color: #FFD508;
+}
