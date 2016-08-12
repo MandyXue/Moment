@@ -21,6 +21,5 @@ body{
 
 .panel-default>.panel-heading {
     background-color:rgba(255, 213, 8, 0.5);
-    /*color: #333;*/
     border-color: #FFD508;
 }
